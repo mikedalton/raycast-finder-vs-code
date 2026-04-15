@@ -1,0 +1,32 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-finder-vs-code",
+  "title": "Open Finder Window in VS Code",
+  "description": "Opens the current Finder window path in a new VS Code window",
+  "icon": "icon.png",
+  "author": "mikedalton",
+  "categories": ["Developer Tools"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "open-in-vscode",
+      "title": "Finder → VS Code",
+      "description": "Opens the current Finder window folder in VS Code",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "ray build --skip-types -e dist -o dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
